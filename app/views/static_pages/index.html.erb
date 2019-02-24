@@ -1,8 +1,7 @@
-<h1>Welcome to my Portfolio</h1>
-
-<ul>
-  <li><%= link_to 'RailsTutorial', '#' %></li>
-  <li><%= link_to 'ポテパンキャンプ', '#' %></li>
-  <li><%= link_to '暇つぶし脳トレサイト', '#' %></li>
-  <li><%= link_to 'APIを使った検索フォーム', '#' %></li>
-</ul>
+<div class='container mx-auto'>
+  <h1 class='text-center'>- 冒険の記録 -</h1>
+</div>
+<div class='container mx-auto' id='about'><%= render 'about' %></div>
+<div class='container mx-auto' id='works'><%= render 'works' %></div>
+<div class='container mx-auto' id='contact'><%= render 'contact' %></div>
+<%= render 'modal/modal_list' %>
