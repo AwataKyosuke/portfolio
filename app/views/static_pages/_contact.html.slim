@@ -1,0 +1,13 @@
+h2  - クエストを依頼する -
+.box
+  h4.title  - フォーム -
+  = form_with url: 'https://formspree.io/kyou0209@gmail.com', local: true do |f|
+    .form-row.mb-2.pt-2
+      .col
+        = f.text_field :name, class: 'form-control', placeholder: '名前', required: true
+      .col
+        = f.text_field :email, class: 'form-control', placeholder: 'メールアドレス', required: true
+    .form-group
+      = f.text_area :message, class: 'form-control', placeholder: 'メッセージ', required: true
+    .form-group
+      = f.submit('送信', class: 'form-control')
