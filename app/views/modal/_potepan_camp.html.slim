@@ -1,11 +1,23 @@
 = link_to image_tag("/images/potepan_app.png", id: 'app_image'), 'https://potepancamp0209.herokuapp.com/potepan', target: '_blank'
-p.lead
-  |
-    ポテパンキャンプの課題として、Solidusを用いて作られたECサイトに機能を追加していった。
-    具体的に追加した項目としては、あらかじめ用意されている商品に関するデータを取得し、詳細情報をページに表示。
-    カテゴリや商品の色、サイズなどでの絞り込み機能の実装。ユーザー登録、ログイン機能を実装。など。
-    モデルのリレーションに関すること、RSpecの書き方、プルリクエストの活用方法など、たくさんの知識をつけることができた。
-    ここでの3ヶ月の経験は、非常に貴重で勉強になった。課題の難易度も非常に高く、かなり苦労したが自分で調べて解決していく力が少しついたと思う。
-li  = link_to 'ソードコードはこちら', 'https://bitbucket.org/llbzv396/potepangraduate/src/master/', target: '_blank'
-li  = link_to 'レビューを受けながら開発した課題はこちら', 'https://bitbucket.org/llbzv396/potepangraduate/pull-requests/?state=MERGED', target: '_blank'
-li  = link_to 'herokuで開く', 'https://potepancamp0209.herokuapp.com/potepan', target: '_blank'
+
+div.work-description.text-center
+  span 概要
+  p.lead  ポテパンキャンプの課題で作成したアプリ
+
+div.row.text-center.mb-3.tech-list
+  span  使用技術
+  div.col-sm-4.border.rounde  Ruby (2.4.1)
+  div.col-sm-4.border.rounde  Ruby on Rails (5.1.4)
+  div.col-sm-4.border.rounde  Solidus
+  div.col-sm-4.border.rounde  Rspec
+  div.col-sm-4.border.rounde  FactoryGirl
+  div.col-sm-4.border.rounde  rubocop
+  div.col-sm-4.border.rounde  MySQL
+  div.col-sm-4.border.rounde  JQuery
+  div.col-sm-4.border.rounde  bootstrap
+  div.col-sm-4.border.rounde  heroku
+
+div.row.text-center.deploy-list
+  div.col-sm-4  = link_to 'ソードコードはこちら', 'https://bitbucket.org/llbzv396/potepangraduate/src/master/', target: '_blank'
+  div.col-sm-4  = link_to '課題はこちら', 'https://bitbucket.org/llbzv396/potepangraduate/pull-requests/?state=MERGED', target: '_blank'
+  div.col-sm-4  = link_to 'herokuで開く', 'https://potepancamp0209.herokuapp.com/potepan', target: '_blank'

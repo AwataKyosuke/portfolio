@@ -43,3 +43,12 @@
       .modal-body
         == render 'modal/portfolio'
         == render 'modal/footer'
+.modal.fade#truth_or_challenge tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true"
+  .modal-dialog.modal-dialog-scrollable role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title#exampleModalScrollableTitle 真実か挑戦かゲーム
+        == render 'modal/button'
+      .modal-body
+        == render 'modal/truth_or_challenge'
+        == render 'modal/footer'

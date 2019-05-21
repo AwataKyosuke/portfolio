@@ -1,11 +1,18 @@
 = link_to image_tag("/images/noutore_app.png", id: 'app_image'), 'https://study-app-0209.herokuapp.com/', target: '_blank'
-p.lead
-  |
-    Railsチュートリアル、ポテパンキャンプを経て、初めて1から自分で作ったサービス。
-    基本的にはRailsチュートリアルをモチーフに作成したので、特段新しい機能とかはないが、気軽に使えて暇つぶしができるようなサービスを作った。
-    今まで、見た目に関する部分は改修がメインで1から作ったことがなかったので、見た目に一番苦労した。
-    ほとんどBootstrapを使って見た目を整えただけなので、少し拙い見た目ではあるが、初めて作り上げたサービスなので、愛着も少しある。
-    また、問い合わせページではメール送信ができるようになっており、そこは少し苦労した。
-    ポテパンキャンプのECサイトの改修を優先的に進めているので、こちらはあまり開発が進んでいない。
-li  = link_to 'ソードコードはこちら', 'https://github.com/llbzv396/question_box_app', target: '_blank'
-li  = link_to 'herokuで開く', 'https://study-app-0209.herokuapp.com/', target: '_blank'
+
+div.work-description.text-center
+  span  概要
+  p.lead  Railsチュートリアルを真似て作った脳トレサイト
+
+div.row.text-center.mb-3.tech-list
+  span  使用技術
+  div.col-sm-4.border.rounded  Ruby (2.4.1)
+  div.col-sm-4.border.rounded  Rails (5.1.6)
+  div.col-sm-4.border.rounded  sqlite3
+  div.col-sm-4.border.rounded  bootstrap
+  div.col-sm-4.border.rounded  rubocop
+  div.col-sm-4.border.rounded  heroku
+
+div.row.text-center.deploy-list
+  div.col-sm-6  = link_to 'ソードコードはこちら', 'https://github.com/llbzv396/question_box_app', target: '_blank'
+  div.col-sm-6  = link_to 'herokuで開く', 'https://study-app-0209.herokuapp.com/', target: '_blank'

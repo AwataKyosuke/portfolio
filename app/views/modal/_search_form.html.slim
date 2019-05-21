@@ -1,9 +1,18 @@
 = link_to image_tag("/images/api_app.png", id: 'app_image'), 'https://rensa-tutorial-app.herokuapp.com/', target: '_blank'
-p.lead
-  |
-    APIに関する基本的なこと、どういった流れで処理が行われているのか、APIの便利さなど、多くのことを学べた。
-    全く使ったことがなかったので、リクエストをどう送ってそれがどういった形で返ってくるのかなど、分からないことだらけだったが
-    ひたすらトライアンドエラーを繰り返すうちに、理解が進んだ。
-    こちらも見た目はBootstrapで簡単に整えただけなので、あまり綺麗ではないが、APIの理解が深まった。
-li  = link_to 'ソードコードはこちら', 'https://github.com/llbzv396/api_tutorial_app', target: '_blank'
-li  = link_to 'herokuで開く', 'https://rensa-tutorial-app.herokuapp.com/', target: '_blank'
+
+div.work-description.text-center
+  span 概要
+  p.lead  APIを使ってYoutubeの動画、楽天の商品、Qiitaの記事などを検索できる
+
+div.row.text-center.mb-3.tech-list
+  span  使用技術
+  div.col-sm-4.border.rounde  Ruby (2.5.1)
+  div.col-sm-4.border.rounde  Ruby on Rails (5.2.2)
+  div.col-sm-4.border.rounde  各API
+  div.col-sm-4.border.rounde  JQuery
+  div.col-sm-4.border.rounde  bootstrap
+  div.col-sm-4.border.rounde  heroku
+
+div.row.text-center.deploy-list
+  div.col-sm-6  = link_to 'ソードコードはこちら', 'https://github.com/llbzv396/api_tutorial_app', target: '_blank'
+  div.col-sm-6  = link_to 'herokuで開く', 'https://rensa-tutorial-app.herokuapp.com/', target: '_blank'

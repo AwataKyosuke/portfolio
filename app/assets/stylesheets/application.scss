@@ -92,6 +92,33 @@ h1 {
   font-size: 20px;
 }
 
+.tech-list {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tech-list span {
+  font-weight: bold;
+  text-decoration: underline;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.deploy-list {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.work-description span {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 @keyframes fade_in {
   0% {
     opacity: 0;

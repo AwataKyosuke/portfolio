@@ -1,9 +1,18 @@
 = link_to image_tag("/images/railstutorial_app.png", id: 'app_image'), 'https://rails-tutorial-app-0209.herokuapp.com/', target: '_blank'
-p.lead
-  |
-    RailsTutorialは、解説動作を見ながら3周。今まで独学で勉強してきた内容と比べ、一気にレベルが上がった印象。
-    基礎的な知識をつけることができたと思う。今でもこのチュートリアルで書いたコードを活用することもあるので
-    非常にいい勉強になったと思う。また、ユーザー登録の際に確認用メールが送信されるが、メールが届くのに時間がかかるので、
-    デモ用のユーザー(EMAIL: demo@railstutorial.org / PASS: demouser)を用意したのでこちらを使ってください。
-li  = link_to 'ソードコードはこちら', 'https://github.com/llbzv396/rails_tutorial_app', target: '_blank'
-li  = link_to 'herokuで開く', 'https://rails-tutorial-app-0209.herokuapp.com/', target: '_blank'
+
+div.work-description.text-center
+  span 概要
+  p.lead  Railsチュートリアルでできたアプリ。デモユーザー(email: demo@railstutorial.org / password: demouser)
+
+div.row.text-center.mb-3.tech-list
+  span  使用技術
+  div.col-sm-4.border.rounde  Ruby (2.4.1)
+  div.col-sm-4.border.rounde  Ruby on Rails (5.1.4)
+  div.col-sm-4.border.rounde  minitest
+  div.col-sm-4.border.rounde  sqlite3
+  div.col-sm-4.border.rounde  bootstrap
+  div.col-sm-4.border.rounde  heroku
+
+div.row.text-center.deploy-list
+  div.col-sm-6  = link_to 'ソードコードはこちら', 'https://github.com/llbzv396/rails_tutorial_app', target: '_blank'
+  div.col-sm-6  = link_to 'herokuで開く', 'https://rails-tutorial-app-0209.herokuapp.com/', target: '_blank'
